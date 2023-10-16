@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="corretora" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>br.edu.unifei.ecot13.eleicao.Acao</class>
+        <class>br.edu.unifei.ecot13.eleicao.Bolsa</class>
+        <class>br.edu.unifei.ecot13.eleicao.Cambio</class>
+        <class>br.edu.unifei.ecot13.eleicao.CarteiraInvestimento</class>
+        <class>br.edu.unifei.ecot13.eleicao.CDB</class>
+        <class>br.edu.unifei.ecot13.eleicao.Corretagem</class>
+        <class>br.edu.unifei.ecot13.eleicao.Corretora</class>
+        <class>br.edu.unifei.ecot13.eleicao.Debenture</class>
+        <class>br.edu.unifei.ecot13.eleicao.Imposto</class>
+        <class>br.edu.unifei.ecot13.eleicao.Instituicao</class>
+        <class>br.edu.unifei.ecot13.eleicao.Investidor</class>
+        <class>br.edu.unifei.ecot13.eleicao.Operacao</class>
+		<class>br.edu.unifei.ecot13.eleicao.Privada</class>
+		<class>br.edu.unifei.ecot13.eleicao.Publica</class>
+		<class>br.edu.unifei.ecot13.eleicao.RendaFixa</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/corretora?useTimezone=true&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="corretora"/>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="corretora"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+        </properties>
+    </persistence-unit>
+</persistence>
